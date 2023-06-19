@@ -38,4 +38,11 @@ int main() {
 	//menunjuk ke sebuah file
 	infile.open("contohfile.txt");
 
+	cout << endl << ">= Membulka dan membaca file " << endl;
+	//jika file ada maka
+	if (infile.is_open())
+	{
+		//
+	}
+
 }
