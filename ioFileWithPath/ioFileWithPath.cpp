@@ -2,17 +2,17 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 int main() {
 	string baris;
-	
+	//memasukkan nama file secara spesifik
+	string Namafile;
+	cout  << "Masukkan Nama file= ";
+	cin >> Namafile;
 	// Membuka file dalam mode menulis.
 	ofstream outfile;
 
 	// menunjuk ke sebuah nama file.
-	outfile.open("contohfile.txt");
-
-	//outfile.open("D:\pemdas\namafile.txt")
+	outfile.open(Namafile+"txt",ios::out);
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -32,7 +32,7 @@ int main() {
 	//membuka file dalam mode membaca
 	ifstream infile;
 	//menunjuk ke sebuah file
-	infile.open("contohfile.txt");
+	infile.open(Namafile+"txt",ios::in);
 
 	cout << endl << ">= Membulka dan membaca file " << endl;
 	//jika file ada maka
