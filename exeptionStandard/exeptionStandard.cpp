@@ -11,5 +11,8 @@ int main()
 	try {
 		array <int, 3> data = { 1, 2, 3 };
 		//pesan array integer 3 element
+		cout << data.at(4) << endl;
+		//Memanggil array elemen ke 5
 	}
+	cata
 }
