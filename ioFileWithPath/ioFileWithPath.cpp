@@ -12,7 +12,7 @@ int main() {
 	ofstream outfile;
 
 	// menunjuk ke sebuah nama file.
-	outfile.open(Namafile+"txt",ios::out);
+	outfile.open(Namafile+".txt",ios::out);
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -32,7 +32,7 @@ int main() {
 	//membuka file dalam mode membaca
 	ifstream infile;
 	//menunjuk ke sebuah file
-	infile.open(Namafile+"txt",ios::in);
+	infile.open(Namafile+".txt",ios::in);
 
 	cout << endl << ">= Membulka dan membaca file " << endl;
 	//jika file ada maka
